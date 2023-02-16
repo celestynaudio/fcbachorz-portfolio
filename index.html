@@ -1,0 +1,258 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, intital scale=1.0">
+    <title>Personal Portfolio - Filip Bachorz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/af0811b353.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/icon.png">
+</head>
+
+<body>
+<div id="header"> <!--'Div used to group similar content together'-->
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo"> <!--Logo on top left--> 
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li> <!--Creating Navigation Menus-->
+                <li><a href="#demoreel">Demo Reel</a></li> <!--Creating Navigation Menus-->
+                <li><a href="#about">About</a></li>                
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Sound Designer/Composer</p>
+            <h1>Hi, I'm <span>Filip C. Bachorz</span><br> from London, Ontario</h1> <!--'br' used to seperate text by row 'span' is to deliniate where-->
+        </div>
+    </div>
+</div>
+
+<!-------------Demo Reel----------------->
+<div id="demoreel">
+    <div class="container">
+        <div class="row">
+            <div class="demo-col-1">
+                <h1 class="sub-title">Demo Reel</h1>
+                  <p class="paragraph">  My aim is to create quality sound for video games in an efficient and creative manner. 
+                    I believe that the audio in a game should be immersive, cohesive and thematically appropriate. This demo reel highlights some of my best work so far. 
+                  </p>
+                  <p1 class="par">
+                        The first clip, 'Project Convalescnce', displays a wide array of my audio skills, such as atmospheric effects, music composition and integration into Unity and FMOD. 
+                        'Project Stealth' is a great showcase of my skills in SFX Design, Horizontal Scoring, and Audio Mixing. 
+                        The last clip, 'Project Invasion' showcase my ability to record, edit and implement Voiceovers.
+                  </p1>
+            </div>
+            <div class="demo-col-2">
+                <iframe class="video" width="700" height="580" src="https://www.youtube.com/embed/_3ekxqcLoAg" title="YouTube video player" frameborder="0" allow="accelerometer; 
+                autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picutre; web-share" allowfullscreen></iframe>
+            </div>
+        </div>    
+        <a href="https://www.youtube.com/@celestyn_music/featured" class="sm" target="_blank">See More</a>
+    </div>
+</div>
+
+<!---------------about----------------->
+<div id="about">        <!--Adding 'About Me' section below main page-->
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">     <!--Adding picture for 'About Me' section-->
+            </div>
+            <div class="about-col-2"> 
+                <h1 class="sub-title">About Me</h1>      <!--Text for about me section-->
+                <p class="para">I am a recent Engineering Graduate from Western University in Ontario, Canada. I have also completed a course with Berklee College of Music for Game Audio Design. 
+                   My services include SFX Design, music composition and recording, foley design and voiceover work.
+                   I am skilled and familar with Middelware software such as FMOD Studio and Wwise Studio, as well as game engines such as Unity or Unreal Engine.
+                   Industry standard plugins from Fab-Filter, Waves, Klevgrand and iZoptope are used to heighten any project I am working on. </p>
+
+                    <div class="tab-titles">                            <!--Adding Subheaders for 'About Me', with click compatability-->
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> <!--'onclick' Used to create a function that shows only the tab clicked-->
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">       <!--Sub-subheading for Each tab-->
+                        <ul> <!--SKills-->
+                            <li><span>SFX Design</span><br>Creating immersive and visceral sound effects for any game project</li>
+                            <li><span>Music Composition/Production</span><br>Composing and recording music for a variety of genres and moods</li>
+                            <li><span>Voiceover</span><br>Familiar with recording, editing and implementing voice and vocal tracks</li>
+                            <li><span>UI Sound Design</span><br>Ability to creating satisying sound design for User Interfaces</li>
+                            <li><span>Game Engines/Middleware</span><br>Knowledge in using Unreal Engine, Unity Engine, FMOD Studio and Wwise Studio</li>
+                            <li><span>Scripting</span><br>Can use C++ and C# scipting to program audio into Unreal Engine and Unity Engine respectively</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">          <!--Experience-->
+                        <ul>
+                            <li><span>2021 - Current</span><br>Mapping & Records Associate - G-Tel Engineering</li>
+                            <li><span>2020 - 2021</span><br>Customer Service Representitive - RONA: Home and Garden</li>
+                            <li><span>2018 - 2022</span><br>On-Air Host and Production Volunteer - Radio Western</li>
+                            <li><span>2017 - 2019</span><br>Technical Quality Control Supervisor - Engineers in Action</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">          <!--Education-->
+                        <ul>
+                            <li><span>2022</span><br>Intro to Video Game Audio Design at Berklee Online</li>
+                            <li><span>2015 - 2019</span><br>Bachelor of Civil Engineering at Western University</li>
+                        </ul>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------Portfolio------------>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Sound Design</h3>
+                    <p>This link takes you to my YouTube channel, which catalogs all my Sound Design Projects</p>
+                    <a href="https://www.youtube.com/@celestyn_music/featured" target="_blank" <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music</h3>
+                    <p>This link takes you too my Soundcloud page, which catalogs all my oringal music</p>
+                    <a href="https://soundcloud.com/celestynmusic" target="_blank" <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Radio</h3>
+                    <p>A catalog of the radio shows I hosted and produced for Radio Western</p>
+                    <a href="https://www.mixcloud.com/On_The_Flip_Side/" target="_blank" <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+</div>
+
+<!------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-headphones"></i>  <!--Icon for Sound Design Section (fontawesome.com)-->
+                <h2>Sound Design</h2>
+                <p>Can design for sound using Unity or Unreal Engine. Can use middleware software such as FMOD Studio or WWise Studio for more complex audio interactions</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Soundtracking</h2>
+                <p>Familiar with composing intense or surreal electronic music, grand or tender orchestral suites or whatever best suies your project</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-microphone"></i>
+                <h2>Voiceover</h2>
+                <p>Creating a comprehensive and satisying soundscape for UI menus to heighten user enjoyment</p>
+                <a href="#contact">Learn more</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<!-----------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> fcbachorz@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 416-997-8506</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/filip.c.bachorz" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/filipbachorz/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/filip-bachorz-66981714a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://soundcloud.com/celestynmusic" target="_blank"><i class="fa-brands fa-soundcloud"></i></a>
+                </div>
+                <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2 ">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Celesytn Audio</p>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links"); /*Something to do with hiding the other tabs in About Me*/
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link"); /*Removes avtive Class List(*/
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab"); 
+        }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab"); /*Enables the Experience and Education tab to show it's contents*/
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxO5OiwThBD4P-4XA5YuQytsu_LoQehjLkp_-diDzkx9gtyGjJ6Sw_ANaut6cf6Xa4R/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
+  
+</body>
+</html>  
