@@ -415,8 +415,8 @@ nav .fa-solid
 		font-size: 18px;
 	}
 	.logo{
-		width: 400px;
-		margin-top: 2%;
+		width: 370px;
+		margin-top: -1%;
 	}
 	.video{
 		height: 400px;
@@ -449,8 +449,8 @@ nav .fa-solid
 	font-size: 50px;
 	}
 	.logo{
-		width: 550px;
-		margin-top: 4%;
+		width: 510px;
+		margin-top: 0%;
 	}
 	nav ul{						/*Edit the Navigation Menu when in Tablet*/
 		background: #42d6d6;
