@@ -500,3 +500,141 @@ nav .fa-solid
 	margin-top: -40px;
 	display: block;
 }
+
+/*CSS For Tablet Mode*/
+@media only screen and (max-width: 920px){
+	#header{
+		background-image: url(images/backgroundtablet.png); 
+	}
+	.header-text{
+		margin-top: 50%;	/*Edit Header text in mobile in relation to the top of the page*/
+		margin-left: -2%;
+		font-size: 24px;	/*Edit font size of 'Sound Designer/Compser Header*/
+	}
+	.header-text h1{
+		font-size: 42px;	/*Edit Font Size of 'Hi, I'm Filip...'*/
+	}
+	nav .fa-solid
+	{
+	display: block;
+	font-size: 50px;
+	}
+	.logo{
+		width: 550px;
+		margin-top: 4%;
+	}
+	nav ul{						/*Edit the Navigation Menu when in Tablet*/
+		background: #42d6d6;
+		position: fixed;
+		top: 0;
+		right: -200px;
+		width: 200px;
+		height: 100vh;
+		padding-top: 50px;
+		z-index: 2;
+		transition: right 0.5s;
+		padding: 10% 0;
+	}
+	nav ul li a{
+		font-size: 32px;
+		font-weight: 400;
+		padding: 30% 0;
+		
+	}
+	.demo-col-1{				/*Change Demo Reel Attributes for Tablet*/
+		flex-basis: 100%;
+		padding: 20px;
+	}
+	.paragraph{
+		padding: 20px 0;
+		font-size: 20px;
+	}
+	.par{
+		font-size: 20px;
+	}
+	.demo-col-2{
+		flex-basis: 100%;
+		margin-right: 10%;
+	}
+	.video{
+		height: 350px;		
+	}
+	.sm{
+		margin-left: 28%;
+	}
+
+	nav ul li{					/*Change Parameters of 'About Me' Section in mobile*/
+		display: block;
+		margin: 25px;
+	}
+	nav ul .fa-solid{
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+	}
+	.sub-title{
+		font-size: 40px;
+		padding: 10px 0;	
+	}
+	.tab-titles{
+		margin: 40px 0 20px
+	}
+	.para{
+		font-size: 18px;
+		
+	}
+	.about-col-1, .about-col-2{
+		flex-basis: 100%;
+	}
+	.about-col-1{
+		margin-bottom: 30px;
+	}
+	.about-col-2{
+		font-size: 14px;
+	}
+	.tab-links{
+		font-size: 18px;
+		margin-right: 20px;
+	}
+	.work{
+		width: fit-content;
+	}
+	.contact-left, .contact-right{ /*Change Parameters of 'Contact Form' Section in mobile*/
+		flex-basis: 100%;
+	}
+	.copyright{
+		font-size: 14px;
+	}
+}
+
+/*CSS For Laptop Mode*/
+@media only screen and (max-width: 1400px){
+	
+	.header-text{
+		margin-top: 20%;	/*Edit Header text in mobile in relation to the top of the page*/
+		margin-left: -2%;
+		font-size: 22px;	/*Edit font size of 'Sound Designer/Compser Header*/
+	}
+	.header-text h1{
+		font-size: 40px;	/*Edit Font Size of 'Hi, I'm Filip...'*/
+	}
+	nav ul li a{
+		font-size: 22px;
+	}
+	.logo{
+		width: 400px;
+		margin-top: 2%;
+	}
+	.video{
+		height: 400px;
+		margin-top: 10%;		
+	}
+	.sm{
+		margin-left: 64%;
+	}
+	/*Change Parameters of 'About Me' Section in laptop*/
+	.about-col-1 img{
+		margin-top: 15%;
+	}
+}
